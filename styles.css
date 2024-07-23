@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    max-width: 200px;
+    margin-right: 80px;
+    border-radius: 50%;
+}
+
+
+/* Enlaces */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ced1;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h6 {
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/* Botones */
+button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00ced1;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Formularios */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b3b3b3;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #2c2c2c;
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+}
+
+td {
+    background-color: #1f1f1f;
+}
