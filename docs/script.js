@@ -36,6 +36,8 @@ function enviarFormulario(e){
 
     console.log(nombre, correo, mensaje);
     guardarMensaje(nombre, correo, mensaje);
+
+    document.getElementById('formularioContacto').reset();
 }
 
 function guardarMensaje(nombre, correo, mensaje){
