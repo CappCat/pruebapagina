@@ -47,7 +47,7 @@ a:hover {
 }
 
 /* Encabezados */
-h1, h2, h3, h4, h5 {
+h1, h3, h4, h5 {
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -162,4 +162,60 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #82c1ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}
+
+.box:not(:last-child) {
+    margin-right: 20px; /* Espacio entre las cajas */
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.contenedorflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: #1f1f1f;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 3px solid #82c1ff;
+    box-sizing: border-box;
+    position: relative;
+   /* position: absolute;*/
+    /*bottom: 0;*/
+}
+
+.justificado {
+    text-align: justify;
+}
+
+a:hover {
+    background-color: #0056b3;
 }
