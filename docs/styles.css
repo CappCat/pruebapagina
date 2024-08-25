@@ -36,12 +36,22 @@ body {
     justify-content: space-between;
 }
 
+
+
 .header-image {
     max-width: 200px;
-    margin-right: 40px;
+    margin: auto;
     border-radius: 50%;
 }
 
+.proyectos {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #1e90ff;
+    border-radius: 7px;
+    width: 90%;
+}
 
 /* Enlaces */
 a {
@@ -66,6 +76,10 @@ h1, h3, h4, h5 {
     margin-bottom: 20px;
 }
 
+.description-header {
+    width: 50%;
+}
+
 h6 {
     padding-left: 30px;
     color: #ffffff;
@@ -88,11 +102,15 @@ button:hover {
 
 /* Tarjetas */
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: #1f1f1f;
     border-radius: 10px;
     padding: 20px;
+    margin:auto;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
 }
 
 /* Formularios */
@@ -182,6 +200,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     width: 100%;
 }
 
@@ -238,10 +257,23 @@ a:hover {
     color: #ffffff;
     margin-bottom: 20px;
     font-size: 45px;
+    margin: auto;
 }
 
 .header-title {
     background-color: #1e90ff;
     width: 100%;
-    padding: 0px;
+    padding: 20px 0px;
 }
+
+@media (max-width: 767px) {
+    .header-content {
+      flex-direction: column;
+    }
+    .contenedorflex {
+        flex-direction: column;
+    }
+    .description-header {
+        width: 80%;
+    }
+  }
